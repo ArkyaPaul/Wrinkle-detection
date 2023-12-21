@@ -19,7 +19,6 @@ class FaceAnalyzerApp:
         self.face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
         self.wrinkle_model = self.load_model("wrinkle.json", "wrinkle_model.h5")
 
-        self.EMOTIONS_LIST = ["Mouth open", "Mouth Closed"]
         self.WRINKLE_CLASSES = ["No Wrinkle", "Wrinkle"]
 
         self.setup_gui()
